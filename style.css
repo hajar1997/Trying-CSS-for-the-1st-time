@@ -1,0 +1,75 @@
+body {
+    background-color: darksalmon;
+}
+
+.parent {
+    width: 33%;
+    height: 40vh;
+    background-color: tomato;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid rgb(58, 30, 30);
+    border-radius: 4px;
+    box-shadow: 10px 20px 20px tomato;
+}
+
+.child {
+    height: 5vh;
+    margin-top: 10px;
+}
+
+.child-one {
+    background-color: turquoise;
+    position: relative;
+    left: 12px;
+}
+
+.child-two {
+    background-color: yellow;
+    position: relative;
+    left: 19px;
+}
+
+.child-three {
+    background-color: blueviolet;
+    position: relative;
+    left: 25px;
+}
+
+.yumru-top {
+    position: relative;
+    margin: 0 auto;
+    width: 7%;
+    height: 11vh;
+    border-radius: 50%;
+    background: linear-gradient(30deg, blue, red, green);
+    animation-name: top;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes top {
+    0% {
+        top: 0px
+    }
+    50% {
+        top: 150px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.rotate {
+    width: 14%;
+    height: 10vh;
+    background-color: indianred;
+    margin: 0 auto;
+    border-radius: 25%;
+    border: 1px #646464 solid;
+}
+
+.rotate:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
